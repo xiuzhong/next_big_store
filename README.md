@@ -3,22 +3,29 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+- install Ruby
+```
+# follow this guide: https://github.com/rbenv/rbenv#installation
+> brew install rbenv
+> rbenv init
+# Close you terminal and open a new one, so your changes take effect
+> rbenv install 2.5.8
+```
 
-* Ruby version
+- install ImageMagick
+```
+> brew install imagemagick
+```
 
-* System dependencies
+- install next_big_store
+```
+> git clone https://github.com/xiuzhong/next_big_store.git
+> cd next_big_store
+> bundle install
+> bundle exec rails s
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+That's all, the e-shop is ready on http://localhost:3000
+The admin of e-shop is ready on http://localhost:3000/admin with:
+  - username: spree@example.com
+  - password: spree123
